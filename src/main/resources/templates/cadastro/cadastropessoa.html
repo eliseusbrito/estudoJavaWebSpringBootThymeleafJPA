@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body>
     <p>Cadastro Pessoa</p>
@@ -14,7 +17,8 @@
         <input name="sobrenome">
         <label>Idade</label>
         <input name="idade">
-        <input type="submit"value="salvar">
+        <input class="btn waves-effect waves-light"type="submit"value="salvar">
+        </button>
     </form>
 
     <a href="/listapessoas">Lista de Pessoas</a>
@@ -25,6 +29,7 @@
         <td th:text = "${pessoa.sobrenome}"></td>
         </tr>
     </table>
-
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>
